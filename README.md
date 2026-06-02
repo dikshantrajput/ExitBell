@@ -49,7 +49,13 @@ ExitBell/
 
 ### Download
 
-Grab the latest `ExitBell.dmg` from [Releases](../../releases) and drag to Applications.
+1. Grab the latest `ExitBell.dmg` from [Releases](../../releases)
+2. Open the DMG and drag `ExitBell.app` to Applications
+3. Run this once in Terminal to clear the Gatekeeper flag:
+```bash
+xattr -cr /Applications/ExitBell.app
+```
+4. Open ExitBell from Applications — the bell appears in your menubar
 
 ### Build from source
 
